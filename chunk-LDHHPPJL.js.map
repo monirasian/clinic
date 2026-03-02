@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/career/career-routing.module.ts", "src/app/modules/career/career.module.ts"],
+  "sourcesContent": ["import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: '',\r\n    loadComponent: () =>\r\n      import('./components/career.component').then((module) => module.CareerComponent)\r\n  }\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class CareerRoutingModule {}\r\n", "import { CommonModule } from '@angular/common';\r\nimport { NgModule } from '@angular/core';\r\n\r\nimport { CareerRoutingModule } from './career-routing.module';\r\n\r\n@NgModule({\r\n  imports: [CommonModule, CareerRoutingModule]\r\n})\r\nexport class CareerModule {}\r\n"],
+  "mappings": ";;;;;;;;;;;;;AAGA,IAAM,SAAiB;EACrB;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAA+B,EAAE,KAAK,CAAC,WAAW,OAAO,eAAe;;;AAQ/E,IAAO,uBAAP,MAAO,qBAAmB;;;mCAAnB,sBAAmB;AAAA;oFAAnB,qBAAmB,CAAA;wFAHpB,aAAa,SAAS,MAAM,GAC5B,YAAY,EAAA,CAAA;AAElB,IAAO,sBAAP;;sEAAO,qBAAmB,CAAA;UAJ/B;WAAS;MACR,SAAS,CAAC,aAAa,SAAS,MAAM,CAAC;MACvC,SAAS,CAAC,YAAY;KACvB;;;;;ACNK,IAAO,gBAAP,MAAO,cAAY;;;mCAAZ,eAAY;AAAA;6EAAZ,cAAY,CAAA;iFAFb,cAAc,mBAAmB,EAAA,CAAA;AAEvC,IAAO,eAAP;;sEAAO,cAAY,CAAA;UAHxB;WAAS;MACR,SAAS,CAAC,cAAc,mBAAmB;KAC5C;;;",
+  "names": []
+}

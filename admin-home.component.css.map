@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/admin/components/admin-home.component.ts"],
+  "sourcesContent": ["\n      .admin-home {\n        display: grid;\n        gap: 12px;\n      }\n\n      .card {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 12px;\n        text-decoration: none;\n        color: #0f172a;\n        font-weight: 600;\n      }\n\n      .card h2 {\n        margin: 0;\n      }\n\n      .card p {\n        margin: 6px 0 0;\n        color: #475569;\n        font-weight: 400;\n      }\n\n      .grid {\n        display: grid;\n        grid-template-columns: repeat(2, minmax(0, 1fr));\n        gap: 10px;\n      }\n\n      @media (max-width: 900px) {\n        .grid {\n          grid-template-columns: 1fr;\n        }\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;AACA,mBAAA;AACA,SAAA;AACA,eAAA;;AAGF,CAVA,KAUA;AACE,UAAA;;AAGF,CAdA,KAcA;AACE,UAAA,IAAA,EAAA;AACA,SAAA;AACA,eAAA;;AAGF,CAAA;AACE,WAAA;AACA,yBAAA,OAAA,CAAA,EAAA,OAAA,CAAA,EAAA;AACA,OAAA;;AAGF,OAAA,CAAA,SAAA,EAAA;AACE,GAPF;AAQI,2BAAA;;;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/contact/contact-routing.module.ts", "src/app/modules/contact/contact.module.ts"],
+  "sourcesContent": ["import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: '',\r\n    loadComponent: () =>\r\n      import('./components/contact.component').then((module) => module.ContactComponent)\r\n  }\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class ContactRoutingModule {}\r\n", "import { CommonModule } from '@angular/common';\r\nimport { NgModule } from '@angular/core';\r\n\r\nimport { ContactRoutingModule } from './contact-routing.module';\r\n\r\n@NgModule({\r\n  imports: [CommonModule, ContactRoutingModule]\r\n})\r\nexport class ContactModule {}\r\n"],
+  "mappings": ";;;;;;;;;;;;;AAGA,IAAM,SAAiB;EACrB;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAAgC,EAAE,KAAK,CAAC,WAAW,OAAO,gBAAgB;;;AAQjF,IAAO,wBAAP,MAAO,sBAAoB;;;mCAApB,uBAAoB;AAAA;qFAApB,sBAAoB,CAAA;yFAHrB,aAAa,SAAS,MAAM,GAC5B,YAAY,EAAA,CAAA;AAElB,IAAO,uBAAP;;sEAAO,sBAAoB,CAAA;UAJhC;WAAS;MACR,SAAS,CAAC,aAAa,SAAS,MAAM,CAAC;MACvC,SAAS,CAAC,YAAY;KACvB;;;;;ACNK,IAAO,iBAAP,MAAO,eAAa;;;mCAAb,gBAAa;AAAA;8EAAb,eAAa,CAAA;kFAFd,cAAc,oBAAoB,EAAA,CAAA;AAExC,IAAO,gBAAP;;sEAAO,eAAa,CAAA;UAHzB;WAAS;MACR,SAAS,CAAC,cAAc,oBAAoB;KAC7C;;;",
+  "names": []
+}

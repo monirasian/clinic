@@ -1,0 +1,340 @@
+{
+  "NAV": {
+    "MENU": "Menu",
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "ABOUT_US": "About Us",
+    "DOCTORS": "Doctors",
+    "CAREER": "Career",
+    "CONTACT": "Contact",
+    "ADMIN": "Admin",
+    "SEARCH": "Search",
+    "BOOK_VISIT": "Book a visit",
+    "LANGUAGE": "Language"
+  },
+  "ADMIN": {
+    "TITLE": "Admin Panel",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "USERNAME_PLACEHOLDER": "Enter username",
+    "PASSWORD_PLACEHOLDER": "Enter password",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "WELCOME": "Welcome to the admin panel.",
+    "INVALID_CREDENTIALS": "Invalid username or password."
+  },
+  "LANG": {
+    "ENGLISH": "English",
+    "GEORGIAN": "Georgian"
+  },
+  "COMMON": {
+    "LOADING": "Loading...",
+    "COUNT": "Count",
+    "PHONE": "Phone",
+    "EMAIL": "Email",
+    "SEE_ALL": "See all",
+    "LEARN_MORE": "Learn more",
+    "VIEW_PROFILE": "View profile",
+    "VIEW_DETAILS": "View details",
+    "SPECIALIST": "Specialist",
+    "SPECIALIZATION": "Specialization",
+    "DEPARTMENT": "Department",
+    "CLINIC": "clinic",
+    "DAY": "Day",
+    "START": "Start",
+    "END": "End"
+  },
+  "APP": {
+    "CLINIC_OS": "clinic OS",
+    "CLINIC": "clinic",
+    "GLOBAL_SEARCH": "Global Search",
+    "GLOBAL_SEARCH_PLACEHOLDER": "Search patients, appointments, invoices",
+    "CLINIC_SWITCHER": "clinic Switcher",
+    "NOTIFICATIONS": "Notifications",
+    "PROFILE": "Profile",
+    "MY_PROFILE": "My Profile",
+    "CHANGE_PASSWORD": "Change Password",
+    "MY_CLINIC": "My clinic",
+    "SIGN_OUT": "Sign out",
+    "HEADER_MENU": "Header menu"
+  },
+  "SIDEBAR": {
+    "DASHBOARD": "Dashboard",
+    "PATIENTS": "Patients",
+    "APPOINTMENTS": "Appointments",
+    "MEDICAL_RECORDS": "Medical Records",
+    "LAB_RESULTS": "Lab Results",
+    "PRESCRIPTIONS": "Prescriptions",
+    "INVOICES": "Invoices",
+    "PAYMENTS": "Payments",
+    "CLINICS": "clinics",
+    "DEPARTMENTS": "Departments",
+    "ROOMS": "Rooms",
+    "DOCTORS": "Doctors",
+    "STAFF": "Staff",
+    "SCHEDULES": "Schedules",
+    "USERS_ROLES": "Users & Roles",
+    "MY_SCHEDULE": "My Schedule",
+    "BILLING": "Billing"
+  },
+  "FOOTER": {
+    "HOSPITAL_CONTACT": "Hospital Contact",
+    "ADDRESS": "Address: 123 Health Street, Tbilisi",
+    "PHONE": "Phone: +995 000 000 000",
+    "EMAIL": "Email: contact@hospital.local",
+    "QUICK_LINKS": "Quick Links",
+    "POLICIES": "Policies",
+    "PRIVACY": "Privacy",
+    "TERMS": "Terms"
+  },
+  "HOME": {
+    "GENERAL": "General",
+    "NA": "N/A",
+    "HERO": {
+      "TITLE": "Compassionate care, modern medicine",
+      "SUBTITLE": "Trusted healthcare with experienced doctors, complete diagnostics, and patient-first support.",
+      "VIEW_SERVICES": "View Services",
+      "FIND_DOCTOR": "Find a Doctor"
+    },
+    "STATS": {
+      "DEPARTMENTS": "Departments",
+      "DOCTORS": "Doctors",
+      "CLINICS": "clinics",
+      "YEARS_OF_SERVICE": "Years of Service"
+    },
+    "FEATURED_SERVICES": {
+      "TITLE": "Featured Services",
+      "DEFAULT_DESC": "Comprehensive care delivered by our specialists."
+    },
+    "FIND_DOCTOR": {
+      "TITLE": "Find a Doctor",
+      "VIEW_ALL": "View all doctors",
+      "SEARCH_PLACEHOLDER": "Search by name, specialization, department"
+    },
+    "LOCATIONS": {
+      "TITLE": "Locations / clinics",
+      "ADDRESS_FALLBACK": "Address available at reception."
+    },
+    "WHY": {
+      "TITLE": "Why Choose Us",
+      "ITEM_1": "24/7 emergency and urgent support",
+      "ITEM_2": "Experienced multidisciplinary care team",
+      "ITEM_3": "Modern diagnostics and laboratory services",
+      "ITEM_4": "Patient-first care coordination",
+      "ITEM_5": "Digital records and transparent billing",
+      "ITEM_6": "Trusted by families for long-term care"
+    },
+    "TESTIMONIALS": {
+      "TITLE": "Patient Stories",
+      "ITEM_1": "The care team was kind, responsive, and professional.",
+      "ITEM_2": "Fast diagnosis and clear treatment plan from day one.",
+      "ITEM_3": "Great communication and smooth follow-up visits."
+    },
+    "CTA": {
+      "TITLE": "Need help now?",
+      "SUBTITLE": "Call us directly or request a callback through our contact page.",
+      "CONTACT_US": "Contact Us",
+      "REQUEST_CALLBACK": "Request a Call Back"
+    },
+    "ERROR": {
+      "LOAD": "Failed to load homepage data."
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About Us",
+    "INTRO": "We provide safe, compassionate, and modern care for every patient and family.",
+    "LOCATIONS": "Locations",
+    "MVV": {
+      "TITLE": "Mission / Vision / Values",
+      "MISSION_LABEL": "Mission",
+      "VISION_LABEL": "Vision",
+      "VALUES_LABEL": "Values",
+      "MISSION": "Deliver accessible, high-quality healthcare with dignity and empathy.",
+      "VISION": "Be the most trusted healthcare partner in our communities.",
+      "VALUES": "Integrity, teamwork, accountability, innovation, and patient-first care."
+    },
+    "FACILITIES": {
+      "TITLE": "Facilities & Technology",
+      "ITEM_1": "Integrated diagnostics and laboratory support",
+      "ITEM_2": "Modern consultation and treatment areas",
+      "ITEM_3": "Digital records and coordinated care workflows"
+    },
+    "ACCREDITATIONS": {
+      "TITLE": "Accreditations",
+      "TEXT": "Our hospital follows nationally recognized standards for quality, safety, and continuous improvement."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "INTRO": "Reach our team for appointments, information, and support.",
+    "CLINIC_LOCATIONS": "clinic Locations",
+    "FORM": {
+      "TITLE": "Contact Form",
+      "NAME": "Your name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "SUBJECT": "Subject",
+      "MESSAGE": "Message",
+      "SEND": "Send Message",
+      "SENT": "Message sent. Our team will contact you soon."
+    },
+    "EMERGENCY": {
+      "TITLE": "Emergency Notice",
+      "TEXT": "If you have an emergency, call local emergency services immediately."
+    }
+  },
+  "CAREER": {
+    "TITLE": "Join our team",
+    "INTRO": "Build your career in a collaborative, patient-focused healthcare environment.",
+    "BENEFITS": {
+      "TITLE": "Benefits",
+      "ITEM_1": "Competitive compensation and growth opportunities",
+      "ITEM_2": "Supportive multidisciplinary culture",
+      "ITEM_3": "Continuous training and education",
+      "ITEM_4": "Modern facilities and tools"
+    },
+    "HIRING_AREAS": {
+      "TITLE": "Hiring areas",
+      "ITEM_1": "Nursing and clinical support",
+      "ITEM_2": "Physicians and specialists",
+      "ITEM_3": "Laboratory and diagnostics",
+      "ITEM_4": "Administrative and front desk operations"
+    },
+    "APPLY": {
+      "TITLE": "How to apply",
+      "TEXT": "Email your CV to careers@hospital.local or contact our HR desk at +995 000 000 001."
+    },
+    "FORM": {
+      "FULL_NAME": "Full name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "ROLE_OF_INTEREST": "Role of interest",
+      "SUBMIT": "Send Application Request",
+      "THANKS": "Thanks! Our team will contact you shortly."
+    }
+  },
+  "DOCTORS": {
+    "TITLE": "Doctors",
+    "SUBTITLE": "Find doctors by name, department, clinic, and specialization.",
+    "SEARCH_PLACEHOLDER": "Search doctor name",
+    "SEARCH_ARIA": "Search doctor",
+    "FILTER_DEPARTMENT_ARIA": "Filter by department",
+    "ALL_DEPARTMENTS": "All departments",
+    "NO_RESULTS": "No doctors found.",
+    "ERROR": {
+      "LOAD": "Failed to load doctors."
+    }
+  },
+  "DOCTOR_PROFILE": {
+    "BACK": "← Back to doctors",
+    "ABOUT_TITLE": "About the doctor",
+    "ABOUT_TEXT": "Experienced specialist focused on safe, compassionate, evidence-based care.",
+    "AVAILABILITY_TITLE": "Weekly availability",
+    "NO_SCHEDULE": "Schedule not published yet.",
+    "CTA_TITLE": "Book / Contact",
+    "CTA_TEXT": "Contact us for appointment requests and availability confirmation.",
+    "CTA_LINK": "Contact Hospital",
+    "ERROR": {
+      "NOT_FOUND": "Doctor not found.",
+      "LOAD": "Failed to load doctor profile."
+    }
+  },
+  "SERVICES": {
+    "TITLE": "Services",
+    "SUBTITLE": "Explore our departments and specialties.",
+    "SEARCH_PLACEHOLDER": "Search service name",
+    "SEARCH_ARIA": "Search services",
+    "FILTER_CLINIC_ARIA": "Filter by clinic",
+    "ALL_CLINICS": "All clinics",
+    "DEFAULT_DESC": "Department information will be provided during consultation.",
+    "NO_RESULTS": "No services found.",
+    "ERROR": {
+      "LOAD": "Failed to load services."
+    }
+  },
+  "SERVICE_DETAIL": {
+    "BACK": "← Back to services",
+    "DEFAULT_DESC": "Department summary will be provided during consultation.",
+    "CONDITIONS": {
+      "TITLE": "Conditions we treat",
+      "ITEM_1": "Preventive and chronic care management",
+      "ITEM_2": "Acute condition assessment and treatment",
+      "ITEM_3": "Referral-based specialist follow-up"
+    },
+    "PROCEDURES": {
+      "TITLE": "Procedures & treatments",
+      "ITEM_1": "clinical evaluation and diagnostics",
+      "ITEM_2": "Evidence-based treatment planning",
+      "ITEM_3": "Follow-up and continuity of care"
+    },
+    "SPECIALISTS": {
+      "TITLE": "Our specialists",
+      "NONE": "No specialist assigned yet."
+    },
+    "CTA": {
+      "TITLE": "Book or Contact",
+      "TEXT": "Call us or send a request through our contact page for this service.",
+      "LINK": "Contact Hospital"
+    },
+    "ERROR": {
+      "NOT_FOUND": "Service not found.",
+      "LOAD": "Failed to load service details."
+    }
+  },
+  "ADMIN_HOME": {
+    "TITLE": "Admin Home",
+    "SUBTITLE": "Manage system data and operations from the admin workspace.",
+    "USERS_ROLES": "Users & Roles",
+    "CLINICS": "clinics",
+    "DEPARTMENTS": "Departments",
+    "DOCTORS": "Doctors"
+  },
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "P1": "We protect your personal and medical information and use it only for healthcare and support purposes.",
+    "P2": "For privacy requests, contact our front desk or send an email to contact@hospital.local."
+  },
+  "TERMS": {
+    "TITLE": "Terms & Conditions",
+    "P1": "Hospital website content is for general information and does not replace professional medical advice.",
+    "P2": "For emergencies, call your local emergency number immediately."
+  },
+  "SIMPLE": {
+    "CLINICS": {
+      "TITLE": "clinics",
+      "ERROR": "Failed to load clinics."
+    },
+    "USERS": {
+      "TITLE": "Users",
+      "ERROR": "Failed to load users."
+    },
+    "USERROLES": {
+      "TITLE": "User Roles",
+      "ERROR": "Failed to load user roles."
+    },
+    "STAFF": {
+      "TITLE": "Staff",
+      "ERROR": "Failed to load staff."
+    },
+    "SCHEDULES": {
+      "TITLE": "Schedules",
+      "ERROR": "Failed to load schedules."
+    },
+    "ROOMS": {
+      "TITLE": "Rooms",
+      "ERROR": "Failed to load rooms."
+    },
+    "ROLES": {
+      "TITLE": "Roles",
+      "ERROR": "Failed to load roles."
+    },
+    "PAYMENTITEMS": {
+      "TITLE": "Payment Items",
+      "ERROR": "Failed to load payment items."
+    },
+    "INVOICEITEMS": {
+      "TITLE": "Invoice Items",
+      "ERROR": "Failed to load invoice items."
+    }
+  }
+}
