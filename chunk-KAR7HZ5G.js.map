@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/environments/environment.development.ts", "src/app/api.config.ts"],
+  "sourcesContent": ["export const environment = {\r\n  production: false,\r\n  apiBaseUrl: '/api'\r\n};\r\n", "import { InjectionToken } from '@angular/core';\r\nimport { environment } from '../environments/environment';\r\n\r\nexport const API_BASE_URL = new InjectionToken<string>('API_BASE_URL', {\r\n  factory: () => environment.apiBaseUrl\r\n});\r\n"],
+  "mappings": ";;;;;AAAO,IAAM,cAAc;EACzB,YAAY;EACZ,YAAY;;;;ACCP,IAAM,eAAe,IAAI,eAAuB,gBAAgB;EACrE,SAAS,MAAM,YAAY;CAC5B;",
+  "names": []
+}

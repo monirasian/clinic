@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/aboutus/components/aboutus.component.ts"],
+  "sourcesContent": ["\n      .about-page {\n        display: grid;\n        gap: 12px;\n      }\n\n      .card {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 12px;\n      }\n\n      h2,\n      h3,\n      h4 {\n        margin: 0;\n      }\n\n      p,\n      li {\n        color: #475569;\n      }\n\n      .locations {\n        display: grid;\n        grid-template-columns: repeat(2, minmax(0, 1fr));\n        gap: 10px;\n      }\n\n      .location {\n        border: 1px solid #e2e8f0;\n        border-radius: 10px;\n        padding: 10px;\n      }\n\n      @media (max-width: 900px) {\n        .locations {\n          grid-template-columns: 1fr;\n        }\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAGF;AAAA;AAAA;AAGE,UAAA;;AAGF;AAAA;AAEE,SAAA;;AAGF,CAAA;AACE,WAAA;AACA,yBAAA,OAAA,CAAA,EAAA,OAAA,CAAA,EAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,WAAA;;AAGF,OAAA,CAAA,SAAA,EAAA;AACE,GAbF;AAcI,2BAAA;;;",
+  "names": []
+}

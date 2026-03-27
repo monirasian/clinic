@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/doctors/doctors-routing.module.ts", "src/app/modules/doctors/doctors.module.ts"],
+  "sourcesContent": ["import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: ':id',\n    loadComponent: () =>\n      import('./components').then((module) => module.DoctorProfileComponent)\n  },\n  {\n    path: '',\n    loadComponent: () =>\n      import('./components').then((module) => module.DoctorsComponent)\n  }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class DoctorsRoutingModule {}\n", "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { DoctorsRoutingModule } from './doctors-routing.module';\n\n@NgModule({\n  imports: [CommonModule, DoctorsRoutingModule]\n})\nexport class DoctorsModule {}\r\n"],
+  "mappings": ";;;;;;;;;;;;;AAGA,IAAM,SAAiB;EACrB;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAAc,EAAE,KAAK,CAAC,WAAW,OAAO,sBAAsB;;EAEzE;IACE,MAAM;IACN,eAAe,MACb,OAAO,qBAAc,EAAE,KAAK,CAAC,WAAW,OAAO,gBAAgB;;;AAQ/D,IAAO,wBAAP,MAAO,sBAAoB;;;mCAApB,uBAAoB;AAAA;qFAApB,sBAAoB,CAAA;yFAHrB,aAAa,SAAS,MAAM,GAC5B,YAAY,EAAA,CAAA;AAElB,IAAO,uBAAP;;sEAAO,sBAAoB,CAAA;UAJhC;WAAS;MACR,SAAS,CAAC,aAAa,SAAS,MAAM,CAAC;MACvC,SAAS,CAAC,YAAY;KACvB;;;;;ACXK,IAAO,iBAAP,MAAO,eAAa;;;mCAAb,gBAAa;AAAA;8EAAb,eAAa,CAAA;kFAFd,cAAc,oBAAoB,EAAA,CAAA;AAExC,IAAO,gBAAP;;sEAAO,eAAa,CAAA;UAHzB;WAAS;MACR,SAAS,CAAC,cAAc,oBAAoB;KAC7C;;;",
+  "names": []
+}

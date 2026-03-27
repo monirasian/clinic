@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/career/components/career.component.ts"],
+  "sourcesContent": ["\n      .career-page {\n        display: grid;\n        gap: 12px;\n      }\n\n      .card {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 12px;\n      }\n\n      h2,\n      h3 {\n        margin: 0;\n      }\n\n      p,\n      li {\n        color: #475569;\n      }\n\n      .grid {\n        display: grid;\n        gap: 8px;\n      }\n\n      .apply-form {\n        display: grid;\n        gap: 8px;\n      }\n\n      input,\n      textarea {\n        border: 1px solid #d1d5db;\n        border-radius: 8px;\n        padding: 8px 10px;\n      }\n\n      button {\n        border: 1px solid #2563eb;\n        background: #2563eb;\n        color: white;\n        border-radius: 8px;\n        padding: 8px 12px;\n        font-weight: 600;\n        width: fit-content;\n      }\n\n      .ok {\n        color: #166534;\n        margin: 8px 0 0;\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAGF;AAAA;AAEE,UAAA;;AAGF;AAAA;AAEE,SAAA;;AAGF,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,WAAA;AACA,OAAA;;AAGF;AAAA;AAEE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,WAAA,IAAA;;AAGF;AACE,UAAA,IAAA,MAAA;AACA,cAAA;AACA,SAAA;AACA,iBAAA;AACA,WAAA,IAAA;AACA,eAAA;AACA,SAAA;;AAGF,CAAA;AACE,SAAA;AACA,UAAA,IAAA,EAAA;;",
+  "names": []
+}

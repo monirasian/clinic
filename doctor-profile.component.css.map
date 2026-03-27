@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/doctors/components/doctor-profile.component.ts"],
+  "sourcesContent": ["\n      .doctor-profile {\n        display: grid;\n        gap: 12px;\n      }\n\n      .back {\n        margin: 0;\n      }\n\n      .back a,\n      .cta a {\n        color: #1e40af;\n        text-decoration: none;\n        font-weight: 600;\n      }\n\n      .card {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 12px;\n      }\n\n      h2,\n      h3 {\n        margin: 0;\n      }\n\n      p {\n        margin: 6px 0;\n        color: #475569;\n      }\n\n      table {\n        width: 100%;\n        border-collapse: collapse;\n      }\n\n      th,\n      td {\n        border-bottom: 1px solid #e2e8f0;\n        padding: 8px;\n        text-align: left;\n      }\n\n      .error {\n        color: #b91c1c;\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA;;AAGF,CAJA,KAIA;AAAA,CAAA,IAAA;AAEE,SAAA;AACA,mBAAA;AACA,eAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAGF;AAAA;AAEE,UAAA;;AAGF;AACE,UAAA,IAAA;AACA,SAAA;;AAGF;AACE,SAAA;AACA,mBAAA;;AAGF;AAAA;AAEE,iBAAA,IAAA,MAAA;AACA,WAAA;AACA,cAAA;;AAGF,CAAA;AACE,SAAA;;",
+  "names": []
+}

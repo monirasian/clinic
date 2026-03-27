@@ -1,0 +1,100 @@
+<main class="home-page">
+  <section class="hero card">
+    <h1>{{ 'HOME.HERO.TITLE' | translate }}</h1>
+    <p>{{ 'HOME.HERO.SUBTITLE' | translate }}</p>
+    <div class="hero-actions">
+      <a routerLink="/services">{{ 'HOME.HERO.VIEW_SERVICES' | translate }}</a>
+      <a routerLink="/doctors" class="secondary">{{ 'HOME.HERO.FIND_DOCTOR' | translate }}</a>
+      <a routerLink="/contact" class="secondary">{{ 'NAV.CONTACT' | translate }}</a>
+    </div>
+  </section>
+
+  <p *ngIf="loading" class="info">{{ 'COMMON.LOADING' | translate }}</p>
+  <p *ngIf="error" class="error">{{ error | translate }}</p>
+
+  <section class="stats" *ngIf="!loading && !error">
+    <article class="card">
+      <h3>{{ 'HOME.STATS.DEPARTMENTS' | translate }}</h3>
+      <p>{{ services.length }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ 'HOME.STATS.DOCTORS' | translate }}</h3>
+      <p>{{ doctors.length }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ 'HOME.STATS.CLINICS' | translate }}</h3>
+      <p>{{ clinics.length }}</p>
+    </article>
+    <article class="card">
+      <h3>{{ 'HOME.STATS.YEARS_OF_SERVICE' | translate }}</h3>
+      <p>{{ yearsOfService }}</p>
+    </article>
+  </section>
+
+  <section class="card" *ngIf="!loading && !error">
+    <header class="section-head">
+      <h2>{{ 'HOME.FEATURED_SERVICES.TITLE' | translate }}</h2>
+      <a routerLink="/services">{{ 'COMMON.SEE_ALL' | translate }}</a>
+    </header>
+    <div class="grid three">
+      <article class="tile" *ngFor="let service of featuredServices">
+        <h3>{{ service.Name }}</h3>
+        <p>{{ service.Description || ('HOME.FEATURED_SERVICES.DEFAULT_DESC' | translate) }}</p>
+        <a [routerLink]="['/services', serviceSlug(service)]">{{ 'COMMON.LEARN_MORE' | translate }}</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" *ngIf="!loading && !error">
+    <header class="section-head">
+      <h2>{{ 'HOME.FIND_DOCTOR.TITLE' | translate }}</h2>
+      <a routerLink="/doctors">{{ 'HOME.FIND_DOCTOR.VIEW_ALL' | translate }}</a>
+    </header>
+    <input type="text" [(ngModel)]="doctorSearch" [placeholder]="'HOME.FIND_DOCTOR.SEARCH_PLACEHOLDER' | translate" />
+    <div class="grid two compact">
+      <article class="tile" *ngFor="let doctor of featuredDoctors">
+        <h3>{{ doctorDisplayName(doctor) }}</h3>
+        <p>{{ doctor.Specialty || ('COMMON.SPECIALIST' | translate) }} · {{ departmentName(doctor.DepartmentId) | translate }}</p>
+        <a [routerLink]="['/doctors', doctor.Id]">{{ 'COMMON.VIEW_PROFILE' | translate }}</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" *ngIf="!loading && !error">
+    <h2>{{ 'HOME.LOCATIONS.TITLE' | translate }}</h2>
+    <div class="grid two">
+      <article class="tile" *ngFor="let clinic of clinics">
+        <h3>{{ clinic.Name }}</h3>
+        <p>{{ clinic.Address || ('HOME.LOCATIONS.ADDRESS_FALLBACK' | translate) }}</p>
+        <p><strong>{{ 'COMMON.PHONE' | translate }}:</strong> {{ clinic.Phone || '-' }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" *ngIf="!loading && !error">
+    <h2>{{ 'HOME.WHY.TITLE' | translate }}</h2>
+    <div class="grid three compact">
+      <article class="tile" *ngFor="let item of whyChooseUs">
+        <p>{{ item | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card" *ngIf="!loading && !error">
+    <h2>{{ 'HOME.TESTIMONIALS.TITLE' | translate }}</h2>
+    <div class="grid three compact">
+      <article class="tile" *ngFor="let testimonial of testimonials">
+        <p>{{ testimonial | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card cta" *ngIf="!loading && !error">
+    <h2>{{ 'HOME.CTA.TITLE' | translate }}</h2>
+    <p>{{ 'HOME.CTA.SUBTITLE' | translate }}</p>
+    <div class="hero-actions">
+      <a routerLink="/contact">{{ 'HOME.CTA.CONTACT_US' | translate }}</a>
+      <a routerLink="/contact" class="secondary">{{ 'HOME.CTA.REQUEST_CALLBACK' | translate }}</a>
+    </div>
+  </section>
+</main>

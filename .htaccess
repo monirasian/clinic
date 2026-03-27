@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /clinic/
+
+# Ensure Authorization header is available to PHP/CodeIgniter
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Backend API: forward /clinic/api/* to the CodeIgniter 4 app in backend/public
+RewriteRule ^api(?:/(.*))?$ backend/public/index.php/api/$1 [L,NC,QSA]
+
+# Swagger docs (served by the backend)
+RewriteRule ^swagger$ backend/public/index.php/swagger [L,NC,QSA]
+RewriteRule ^swagger\.json$ backend/public/index.php/swagger.json [L,NC,QSA]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ index.html [L]

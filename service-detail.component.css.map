@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/departments/components/service-detail.component.ts"],
+  "sourcesContent": ["\n      .service-detail {\n        display: grid;\n        gap: 12px;\n      }\n\n      .back {\n        margin: 0;\n      }\n\n      .back a,\n      .doctor a,\n      .cta a {\n        color: #1e40af;\n        text-decoration: none;\n        font-weight: 600;\n      }\n\n      .card {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 12px;\n      }\n\n      h2,\n      h3,\n      h4 {\n        margin: 0;\n      }\n\n      p,\n      li {\n        color: #475569;\n      }\n\n      .specialists {\n        display: grid;\n        gap: 8px;\n      }\n\n      .doctor {\n        border: 1px solid #e2e8f0;\n        border-radius: 10px;\n        padding: 10px;\n      }\n\n      .error {\n        color: #b91c1c;\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CAAA;AACE,UAAA;;AAGF,CAJA,KAIA;AAAA,CAAA,OAAA;AAAA,CAAA,IAAA;AAGE,SAAA;AACA,mBAAA;AACA,eAAA;;AAGF,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAGF;AAAA;AAAA;AAGE,UAAA;;AAGF;AAAA;AAEE,SAAA;;AAGF,CAAA;AACE,WAAA;AACA,OAAA;;AAGF,CA/BA;AAgCE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,WAAA;;AAGF,CAAA;AACE,SAAA;;",
+  "names": []
+}

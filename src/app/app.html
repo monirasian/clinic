@@ -1,0 +1,111 @@
+<main class="app-shell">
+	<header *ngIf="showAdminShell" class="top-header">
+		<div class="header-left">
+			<a class="header-brand" routerLink="/" [attr.aria-label]="'APP.CLINIC_OS' | translate">
+				<img class="logo" src="clinicLogo.jpg" alt="clinic logo" />
+				<strong>{{ 'APP.CLINIC_OS' | translate }}</strong>
+			</a>
+		</div>
+
+		<div class="header-center">
+			<input
+				type="text"
+				[(ngModel)]="searchText"
+				[placeholder]="'APP.GLOBAL_SEARCH_PLACEHOLDER' | translate"
+				[attr.aria-label]="'APP.GLOBAL_SEARCH' | translate"
+			/>
+		</div>
+
+		<div class="header-right">
+			<select [value]="selectedclinic" (change)="onclinicChange($event)" [attr.aria-label]="'APP.CLINIC_SWITCHER' | translate">
+				<option *ngFor="let clinic of clinicOptions" [value]="clinic">{{ clinic }}</option>
+			</select>
+			<button type="button" class="secondary">{{ 'APP.NOTIFICATIONS' | translate }}</button>
+			<div class="profile-menu-wrapper">
+				<button type="button" class="secondary" (click)="toggleProfileMenu()">{{ 'APP.PROFILE' | translate }}</button>
+				<div *ngIf="isProfileMenuOpen" class="profile-menu" role="menu">
+					<button type="button" role="menuitem">{{ 'APP.MY_PROFILE' | translate }}</button>
+					<button type="button" role="menuitem">{{ 'APP.CHANGE_PASSWORD' | translate }}</button>
+					<button type="button" role="menuitem">{{ 'APP.MY_CLINIC' | translate }}</button>
+					<button type="button" role="menuitem" (click)="logoutFromHeader()">{{ 'APP.SIGN_OUT' | translate }}</button>
+				</div>
+			</div>
+			<select
+				id="menu-language"
+				[attr.aria-label]="'NAV.LANGUAGE' | translate"
+				[value]="currentLanguage"
+				(change)="onLanguageChange($event)"
+			>
+				<option value="en">{{ 'LANG.ENGLISH' | translate }}</option>
+				<option value="ka">{{ 'LANG.GEORGIAN' | translate }}</option>
+			</select>
+		</div>
+	</header>
+
+	<div class="layout" [class.with-sidebar]="showAdminShell">
+		<aside *ngIf="showAdminShell" class="sidebar" aria-label="Primary navigation">
+			<a
+				*ngFor="let item of sidebarItems"
+				[routerLink]="item.path"
+				routerLinkActive="active"
+				[routerLinkActiveOptions]="{ exact: item.path === '/' }"
+			>
+				{{ item.labelKey | translate }}
+			</a>
+		</aside>
+
+		<section class="content">
+			<nav *ngIf="showMenu" class="menu" [attr.aria-label]="'APP.HEADER_MENU' | translate">
+				<div class="menu-left">
+					<button type="button" class="menu-trigger" [attr.aria-label]="'NAV.MENU' | translate" routerLink="/" [queryParams]="{}">
+						<img class="menu-logo" src="clinicLogo.jpg" alt="" aria-hidden="true" />
+					</button>
+					<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'NAV.HOME' | translate }}</a>
+					<a routerLink="/services" routerLinkActive="active">{{ 'NAV.SERVICES' | translate }}</a>
+					<a routerLink="/doctors" routerLinkActive="active">{{ 'NAV.DOCTORS' | translate }}</a>
+					<a routerLink="/career" routerLinkActive="active">{{ 'NAV.CAREER' | translate }}</a>
+					<a routerLink="/about" routerLinkActive="active">{{ 'NAV.ABOUT_US' | translate }}</a>
+					<a routerLink="/contact" routerLinkActive="active">{{ 'NAV.CONTACT' | translate }}</a>
+				</div>
+
+				<div class="menu-right">
+					
+					<select
+						id="menu-language-public"
+						[attr.aria-label]="'NAV.LANGUAGE' | translate"
+						[value]="currentLanguage"
+						(change)="onLanguageChange($event)"
+					>
+						<option value="en">{{ 'LANG.ENGLISH' | translate }}</option>
+						<option value="ka">{{ 'LANG.GEORGIAN' | translate }}</option>
+					</select>
+				</div>
+			</nav>
+
+			<router-outlet></router-outlet>
+
+			<footer *ngIf="showMenu" class="site-footer">
+				<div>
+					<h4>{{ 'FOOTER.HOSPITAL_CONTACT' | translate }}</h4>
+					<p>{{ 'FOOTER.ADDRESS' | translate }}</p>
+					<p>{{ 'FOOTER.PHONE' | translate }}</p>
+					<p>{{ 'FOOTER.EMAIL' | translate }}</p>
+				</div>
+				<div>
+					<h4>{{ 'FOOTER.QUICK_LINKS' | translate }}</h4>
+					<a routerLink="/">{{ 'NAV.HOME' | translate }}</a>
+					<a routerLink="/services">{{ 'NAV.SERVICES' | translate }}</a>
+					<a routerLink="/doctors">{{ 'NAV.DOCTORS' | translate }}</a>
+					<a routerLink="/career">{{ 'NAV.CAREER' | translate }}</a>
+					<a routerLink="/about">{{ 'NAV.ABOUT_US' | translate }}</a>
+					<a routerLink="/contact">{{ 'NAV.CONTACT' | translate }}</a>
+				</div>
+				<div>
+					<h4>{{ 'FOOTER.POLICIES' | translate }}</h4>
+					<a routerLink="/privacy">{{ 'FOOTER.PRIVACY' | translate }}</a>
+					<a routerLink="/terms">{{ 'FOOTER.TERMS' | translate }}</a>
+				</div>
+			</footer>
+		</section>
+	</div>
+</main>

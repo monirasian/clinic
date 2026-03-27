@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/modules/home/home-routing.module.ts", "src/app/modules/home/home.module.ts"],
+  "sourcesContent": ["import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: '',\r\n    loadComponent: () => import('./components/home.component').then((module) => module.HomeComponent)\r\n  }\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class HomeRoutingModule {}\r\n", "import { CommonModule } from '@angular/common';\r\nimport { NgModule } from '@angular/core';\r\n\r\nimport { HomeRoutingModule } from './home-routing.module';\r\n\r\n@NgModule({\r\n  imports: [CommonModule, HomeRoutingModule]\r\n})\r\nexport class HomeModule {}\r\n"],
+  "mappings": ";;;;;;;;;;;;;AAGA,IAAM,SAAiB;EACrB;IACE,MAAM;IACN,eAAe,MAAM,OAAO,qBAA6B,EAAE,KAAK,CAAC,WAAW,OAAO,aAAa;;;AAQ9F,IAAO,qBAAP,MAAO,mBAAiB;;;mCAAjB,oBAAiB;AAAA;kFAAjB,mBAAiB,CAAA;sFAHlB,aAAa,SAAS,MAAM,GAC5B,YAAY,EAAA,CAAA;AAElB,IAAO,oBAAP;;sEAAO,mBAAiB,CAAA;UAJ7B;WAAS;MACR,SAAS,CAAC,aAAa,SAAS,MAAM,CAAC;MACvC,SAAS,CAAC,YAAY;KACvB;;;;;ACLK,IAAO,cAAP,MAAO,YAAU;;;mCAAV,aAAU;AAAA;2EAAV,YAAU,CAAA;+EAFX,cAAc,iBAAiB,EAAA,CAAA;AAErC,IAAO,aAAP;;sEAAO,YAAU,CAAA;UAHtB;WAAS;MACR,SAAS,CAAC,cAAc,iBAAiB;KAC1C;;;",
+  "names": []
+}

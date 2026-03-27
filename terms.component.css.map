@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/public/terms.component.ts"],
+  "sourcesContent": ["\n      .static-page {\n        border: 1px solid #e2e8f0;\n        border-radius: 12px;\n        background: white;\n        padding: 16px;\n      }\n\n      .static-page h2 {\n        margin: 0 0 10px;\n      }\n\n      .static-page p {\n        margin: 6px 0;\n        color: #475569;\n      }\n    "],
+  "mappings": ";AACM,CAAA;AACE,UAAA,IAAA,MAAA;AACA,iBAAA;AACA,cAAA;AACA,WAAA;;AAGF,CAPA,YAOA;AACE,UAAA,EAAA,EAAA;;AAGF,CAXA,YAWA;AACE,UAAA,IAAA;AACA,SAAA;;",
+  "names": []
+}
